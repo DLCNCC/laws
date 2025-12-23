@@ -15,6 +15,8 @@ description: "法度者，正之至也"
 <br/>
 
 <a class="btn btn-secondary me-3" href="法律/ff8080817703add20177373df6a43e33"> 行政处罚法</a>
+<a class="btn btn-secondary me-3" href="https://szsyw.cn/" target="_blank" rel="noopener noreferrer"> 数字素养提升</a>
+
 
 
 <br/>
