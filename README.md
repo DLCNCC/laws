@@ -82,7 +82,7 @@
 
 ```bash
 # 克隆仓库到本地
-git clone https://github.com/lawnav/index.git
+git clone https://github.com/DLCNCC/laws.git
 # 进入项目目录
 cd index
 ```
@@ -322,6 +322,125 @@ Node.js 项目配置文件，用于管理前端依赖包。
 
 ## 贡献指南
 
+欢迎您为「数智法度」项目做出贡献！我们非常感谢社区的支持和参与。以下是贡献指南，帮助您了解如何参与项目。
+
+### 贡献方式
+
+您可以通过以下方式为项目做出贡献：
+
+1. **报告问题**：如果您发现了 bug 或有改进建议，欢迎在 GitHub Issues 中提交
+2. **提交代码**：通过 Pull Request 提交修复或新功能
+3. **完善文档**：帮助改进项目文档，包括 README.md 和其他说明文件
+4. **添加内容**：添加新的法律法规文档或更新现有文档
+5. **翻译内容**：将文档翻译成其他语言（如有需要）
+
+### 代码规范
+
+1. **Hugo 模板**：遵循 Hugo 模板最佳实践，保持代码简洁和可读性
+2. **SCSS 样式**：遵循 SCSS 最佳实践，使用变量和模块化设计
+3. **Python 脚本**：遵循 PEP 8 代码规范，添加适当的注释
+4. **Markdown 格式**：遵循项目的 Markdown 格式规范，使用 `unify_markdown_format.py` 脚本统一格式
+
+### 提交流程
+
+1. **Fork 仓库**：在 GitHub 上 Fork 项目仓库到您的个人账号
+2. **克隆仓库**：将 Fork 后的仓库克隆到本地
+3. **创建分支**：创建一个新的分支用于您的贡献
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+4. **进行修改**：在本地进行代码或内容修改
+5. **运行测试**：确保您的修改不会破坏现有功能
+   ```bash
+   # 启动本地开发服务器，检查网站是否正常运行
+   hugo server -D
+   ```
+6. **提交修改**：提交您的修改，使用清晰的提交信息
+   ```bash
+   git add .
+   git commit -m "添加：新功能描述"
+   ```
+7. **推送分支**：将您的分支推送到 GitHub
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+8. **创建 Pull Request**：在 GitHub 上创建 Pull Request，描述您的修改内容和目的
+
+### 添加新的法律法规文档
+
+1. **选择分类**：确定文档所属的领域和分类
+2. **创建文件**：在 `content` 目录下的相应分类中创建 Markdown 文件
+3. **添加元数据**：在文件头部添加 YAML 前置元数据，包括标题、链接标题、类型等
+4. **编写内容**：使用 Markdown 格式编写文档内容
+5. **生成索引**：运行 `create_index_files.py` 脚本确保索引文件正确生成
+6. **检查格式**：运行 `unify_markdown_format.py` 脚本统一 Markdown 格式
+
+### 报告问题
+
+当您报告问题时，请提供以下信息：
+
+1. 问题描述：清晰描述您遇到的问题
+2. 复现步骤：详细说明如何复现问题
+3. 预期结果：您期望的正常行为
+4. 实际结果：当前的错误行为
+5. 环境信息：包括操作系统、浏览器、Hugo 版本等
+6. 截图或日志：如有可能，提供相关截图或错误日志
+
+### 审核流程
+
+1. 提交 Pull Request 后，项目维护者会进行审核
+2. 审核过程中可能会提出修改建议，需要您进行相应修改
+3. 审核通过后，您的贡献会被合并到主分支
+4. 合并后，GitHub Actions 会自动构建和部署网站
+
+### 行为准则
+
+请遵守以下行为准则，确保社区的友好和包容：
+
+1. 尊重他人，不使用侮辱性语言
+2. 接受建设性批评
+3. 关注社区的最大利益
+4. 友善对待其他贡献者
+
+感谢您的贡献！
+
 ## 许可证
 
+本项目采用 ISC 许可证。详情请查看 [ISC 许可证](https://opensource.org/licenses/ISC)。
+
+### 数据来源声明
+
+本项目收集的法律法规文档数据来源于：
+- 国家法律法规数据库 (https://flk.npc.gov.cn/index)
+- 国家规章库 (https://www.gov.cn/zhengce/xxgk/gjgzk/index.htm)
+
+所有法律法规文档的版权归原发布机构所有，本项目仅用于学习和研究目的。
+
 ## 联系方式
+
+### 项目地址
+
+- **GitHub 仓库**：https://github.com/DLCNCC/laws
+- **项目官网**：https://lawnav.github.io/
+
+### 反馈与建议
+
+- **GitHub Issues**：https://github.com/DLCNCC/laws/issues
+- **提交 Bug**：https://github.com/DLCNCC/laws/issues/new?assignees=&labels=bug&projects=&template=bug_report.md&title=
+- **功能请求**：https://github.com/DLCNCC/laws/issues/new?assignees=&labels=enhancement&projects=&template=feature_request.md&title=
+
+### 维护者
+
+- **数智未来**：https://diglit.cn
+- **DLCN.CC**：https://www.dlcn.cc
+
+### 贡献者
+
+感谢所有为项目做出贡献的开发者和用户！
+
+## 致谢
+
+- 感谢 Hugo 提供强大的静态网站生成功能
+- 感谢 Docsy 主题提供优秀的文档网站模板
+- 感谢所有开源工具和库的开发者
+- 感谢社区的支持和贡献

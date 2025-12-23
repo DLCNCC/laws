@@ -1,4 +1,4 @@
-module github.com/lawnav/index
+module github.com/DLCNCC/laws
 
 go 1.24.2
 

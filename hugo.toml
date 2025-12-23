@@ -1,5 +1,5 @@
 baseURL = 'https://lawnav.github.io/'
-title = '数智法度'
+title = '数智法度-法律法规数据库'
 
 # 语言设置
 languageCode = "zh-cn"
@@ -139,8 +139,8 @@ sidebar_menu_truncate=2000
 # navbar_logo = "/img/logo.png"
 [params.ui.feedback]
 enable = true
-yes = '感谢支持，如有新需求请访问 🔗<a href="https://github.com/qundao/law-book/issues/new">提交Issue</a>。'
-no = '很遗憾，如有问题请访问 🔗<a href="https://github.com/qundao/law-book/issues/new">提交Issue</a>。'
+yes = '感谢支持，如有新需求请访问 🔗<a href="https://github.com/DLCNCC/laws/issues/new">提交Issue</a>。'
+no = '很遗憾，如有问题请访问 🔗<a href="https://github.com/DLCNCC/laws/issues/new">提交Issue</a>。'
 
 [params.ui.readingtime]
 enable = true
